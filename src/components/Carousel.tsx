@@ -79,7 +79,10 @@ const Carousel: React.FC<Props> = ({
       </div>
 
       <div className="Button__centered">
-        <div className="Carousel__button" style={{ width: `${itemWidth}px` }}>
+        <div
+          className="Carousel__button"
+          style={{ width: `${frameSize * itemWidth}px` }}
+        >
           <button
             type="button"
             className={`Button__prev ${!infinite && count === 0 ? 'disabled' : ''}`}
